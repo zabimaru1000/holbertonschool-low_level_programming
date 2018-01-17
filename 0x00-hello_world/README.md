@@ -1,0 +1,1 @@
+Directory for basic understanding of the C programming language.
