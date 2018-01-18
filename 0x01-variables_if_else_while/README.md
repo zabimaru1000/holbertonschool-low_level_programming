@@ -1,0 +1,1 @@
+This directory includes C programs that tests variables and conditionals.
