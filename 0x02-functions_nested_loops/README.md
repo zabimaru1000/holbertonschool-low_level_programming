@@ -1,0 +1,1 @@
+This directory includes various C programs and functions that takes from the header holberton.h
