@@ -1,5 +1,13 @@
 #include "holberton.h"
 
+/**
+ * main - Takes header function _putchar and prints a character
+ *
+ * Return: 0 (Success)
+ *
+ */
+
+
 int main(void)
 {
 	_putchar('H');
