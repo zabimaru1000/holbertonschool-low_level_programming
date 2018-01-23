@@ -2,7 +2,6 @@
 
 void print_alphabet(void);
 
-
 /**
  * main - calls on the function print_alphabet
  * Return: 0 (Success)
