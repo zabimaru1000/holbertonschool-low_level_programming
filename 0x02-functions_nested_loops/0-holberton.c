@@ -2,7 +2,6 @@
 
 int main(void)
 {
-
 	_putchar('H');
 	_putchar('o');
 	_putchar('l');
@@ -15,4 +14,5 @@ int main(void)
 	_putchar('\n');
 
 	return (0);
+
 }
