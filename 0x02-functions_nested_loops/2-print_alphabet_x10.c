@@ -2,6 +2,11 @@
 
 void print_alphabet_x10(void);
 
+/**
+ * print_alphabet_x10 - Loops a character starting with 'a' and prints until z.
+ *
+ * Nested for loop that prints the alphabet 10 times.
+ */
 void print_alphabet_x10(void)
 {
 	int loop;
