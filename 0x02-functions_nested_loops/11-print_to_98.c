@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include "holberton.h"
 
-void print_to_98(int n);
-
 /**
  * print_to_98 - Prints numbers up to 98 depending on where it starts.
  * @n: Integer that is taken from main to be used in function.
