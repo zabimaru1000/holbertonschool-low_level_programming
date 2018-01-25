@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	long int i, one = 0, two = 1, add;
+	unsigned long i, one = 0, two = 1, add;
 
 	for (i = 0; i < 51; i++)
 	{
@@ -21,9 +21,9 @@ int main(void)
 			two = add;
 		}
 		if (i < 50)
-			printf("%ld, ", add);
+			printf("%lu, ", add);
 		else
-			printf("%ld", add);
+			printf("%lu", add);
 	}
 
 	printf("\n");
