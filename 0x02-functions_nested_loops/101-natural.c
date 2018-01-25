@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - Declares variables, runs for loop, and prints an int.
+ *
+ * Return: 0 (Success)
+ */
 int main(void)
 {
 	int i, add;
