@@ -10,7 +10,7 @@ int main(void)
 {
 	unsigned long i, one = 0, two = 1, add;
 
-	for (i = 0; i < 51; i++)
+	for (i = 0; i < 50; i++)
 	{
 		if (i <= 1)
 			add = i;
@@ -20,7 +20,7 @@ int main(void)
 			one = two;
 			two = add;
 		}
-		if (i < 50)
+		if (i < 49)
 			printf("%lu, ", add);
 		else
 			printf("%lu", add);
