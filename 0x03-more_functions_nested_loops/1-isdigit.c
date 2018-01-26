@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _islower - Checks ASCII value if it is a digit.
+ * _isdigit - Checks ASCII value if it is a digit.
  *
  * @c: Parameter to be evaluated by if else conditionals.
  *
