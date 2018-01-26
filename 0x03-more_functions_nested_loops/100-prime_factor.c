@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <math.h>
 
+/**
+ * main - Prints largest factor of 612852475143
+ *
+ * Return: 0 (Success)
+ */
 int main(void)
 {
 	long num = 612852475143;
@@ -11,10 +16,7 @@ int main(void)
 	for (i = res; i > 1; i--)
 	{
 		if (num % i == 0)
-		{
-			num = (num / i);
-			printf("%ld\n", num);
-		}
+			printf("%ld\n", num / i);
 	}
 
 	return (0);
