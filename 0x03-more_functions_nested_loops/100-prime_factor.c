@@ -3,9 +3,8 @@
 
 int main(void)
 {
-	int num = 28;
-	int res;
-	int i;
+	long num = 612852475143;
+	int i, res;
 
 	res = (sqrt(num) / 10) + 1;
 
@@ -14,7 +13,7 @@ int main(void)
 		if (num % i == 0)
 		{
 			num = (num / i);
-			printf("%d\n", num);
+			printf("%ld\n", num);
 		}
 	}
 
