@@ -13,12 +13,9 @@ void more_numbers(void)
 		for (tens = 0; tens < 15; tens++)
 		{
 			if (tens > 9)
-			{
 				_putchar('0' + tens / 10);
-				_putchar('0' + tens % 10);
-			}
-			else
-				_putchar('0' + tens);
+
+			_putchar('0' + tens % 10);
 		}
 		_putchar('\n');
 	}
