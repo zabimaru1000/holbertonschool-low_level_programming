@@ -6,23 +6,19 @@
  */
 void more_numbers(void)
 {
-	int tens, out, change;
+	int tens, ones;
 
-	for (out = 0; out < 11; out++)
+	for (ones = 0; ones < 11; ones++)
 	{
 		for (tens = 0; tens < 15; tens++)
 		{
-
-			if (tens > 9 && tens < 15)
+			if (tens > 9)
 			{
-				change = 10;
-				_putchar('0' + 1);
-				_putchar('0' + (tens - change));
+				_putchar('0' + tens / 10);
+				_putchar('0' + tens % 10);
 			}
 			else
 				_putchar('0' + tens);
-
-
 		}
 		_putchar('\n');
 	}
