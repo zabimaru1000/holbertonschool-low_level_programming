@@ -1,6 +1,5 @@
 #include "holberton.h"
 
-
 void print_number(int n)
 {
 	if (n >= -9 && n <= 9)
@@ -9,10 +8,10 @@ void print_number(int n)
 	else if ((n >= 10 && n <= 99) || (n <= -10 && n >= -99))
 		two (n);
 
-	else if (n >= 100 && n <= 999)
+	else if ((n >= 100 && n <= 999) || (n <= -100 && n >= -999))
 		three (n);
 
-	else if (n >= 1000 && n <= 9999)
+	else if ((n >= 1000 && n <= 9999) || (n <= -1000 && n >= -9999))
 		four (n);
 }
 
