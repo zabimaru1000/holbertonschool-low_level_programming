@@ -8,16 +8,19 @@
  */
 int main(void)
 {
-	long num = 612852475143;
-	int i, res;
+	long i, res, num = 612852475143;
 
 	res = (sqrt(num) / 10) + 1;
 
 	for (i = res; i > 1; i--)
 	{
 		if (num % i == 0)
-			printf("%ld\n", num / i);
+		{
+			num = num / i;
+			printf("%ld", num);
+		}
 	}
+	printf("\n");
 
 	return (0);
 }
