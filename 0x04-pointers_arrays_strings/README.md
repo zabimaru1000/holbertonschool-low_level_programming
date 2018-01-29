@@ -1,0 +1,1 @@
+This directory lists functions that uses arrays and pointers.
