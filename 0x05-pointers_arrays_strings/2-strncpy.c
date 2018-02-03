@@ -19,7 +19,7 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[ptA] = src[ptA];
 
 	for (; n > ptA; ptA++)
-		dest[ptA] = src[ptA];
+		dest[ptA] = '\0';
 
 	return (dest);
 }
