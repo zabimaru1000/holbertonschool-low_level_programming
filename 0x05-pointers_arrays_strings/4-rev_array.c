@@ -1,11 +1,16 @@
 #include "holberton.h"
 
+/**
+ * reverse_array - Sorts out integer array in reverse.
+ * @a: Pointer variable to int a, an array of integers.
+ * @n: Pointer variable to number of indexes to swap.
+ *
+ */
 void reverse_array(int *a, int n)
 {
 	int i, store;
 
-	for (n = 0; a[n] != '\0'; n++)
-	;
+	n--;
 
 	for (i = 0; i <= n; i++)
 	{
