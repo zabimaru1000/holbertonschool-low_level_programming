@@ -1,7 +1,5 @@
-#include "holberton.h"
-
 /**
- * _memset - Fills memory with a constant byte.
+ * *_memset - Fills memory with a constant byte.
  * @s: pointer to char array buffer.
  * @b: char value of buffer.
  * @n: unsigned integer value containing how many times to get value b.
