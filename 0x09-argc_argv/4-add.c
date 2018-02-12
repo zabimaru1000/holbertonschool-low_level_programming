@@ -10,10 +10,13 @@
  */
 int main(int argc __attribute__((unused)), char **argv)
 {
-	int vcount;
+	int vcount = 0;
 
-	if (vcount = 0; vcount < argc; vcount++)
-		printf("%d\n", atoi(argv[vcount]) + atoi(argv[vcount]));
+	if (argc == 0)
+		printf("0\n");
+
+	if (vcount < argc)
+		printf("%d\n", atoi(argv[1]) + atoi(argv[2]));
 
 	return (0);
 }
