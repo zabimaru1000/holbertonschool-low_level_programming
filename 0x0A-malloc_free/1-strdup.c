@@ -19,8 +19,10 @@ char *_strdup(char *str)
 		cpy = str;
 
 	mem = malloc(sizeof(char) * i + 1);
-
 	mem = cpy;
+
+	if (mem == '\0')
+		return ('\0');
 
 
 	return (mem);
