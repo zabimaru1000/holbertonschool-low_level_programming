@@ -12,18 +12,14 @@ char *_strdup(char *str)
 	unsigned int i;
 	char *cpy, *mem;
 
-	if (str == '\0')
-		return ('\0');
-
 	for (i = 0; str[i] != '\0'; i++)
 		cpy = str;
 
 	mem = malloc(sizeof(char) * i + 1);
 	mem = cpy;
 
-	if (mem == '\0')
+	if (mem == '\0' || str == '\0')
 		return ('\0');
-
 
 	return (mem);
 }
