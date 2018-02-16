@@ -22,10 +22,18 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (mem == 0)
 		return (NULL);
 
-	return _memset(mem, 0, size * nmemb);
+	return (_memset(mem, 0, size * nmemb));
 
 }
 
+/**
+ * *_memset - Fills memory with a constant byte.
+ * @s: pointer to char array buffer.
+ * @b: char value of buffer.
+ * @n: unsigned integer value containing how many times to get value b.
+ *
+ * Return: s (contains the array value 0x01)
+ */
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
