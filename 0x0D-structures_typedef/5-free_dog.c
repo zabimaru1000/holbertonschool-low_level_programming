@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 
 /**
@@ -8,7 +9,10 @@
  */
 void free_dog(dog_t *d)
 {
-	d = malloc(sizeof(struct dog_t));
-	free(dog_t);
+	if (d == NULL)
+		return;
 
+	free(d->name);
+	free(d->owner);
+	free(d);
 }
