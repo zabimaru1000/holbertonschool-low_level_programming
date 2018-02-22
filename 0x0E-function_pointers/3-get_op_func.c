@@ -21,10 +21,13 @@ int (*get_op_func(char *s))(int, int)
 	int i;
 
 	i = 0;
-	while(ops[i].op && strcmp(ops[i].op, s) != 0)
+	while (ops[i].f != NULL)
 	{
+		if (s[1] == '\0' && *s == *ops[i].op)
+			return (ops[i].f);
 		i++;
 	}
 
-	return (ops[i].f);
+	printf("Error\n");
+	exit(99);
 }

@@ -4,6 +4,8 @@
 
 /**
  * main - Calls get_op_func
+ * @argc: Number of arguments
+ * @argv: Argument vector
  *
  * Return: 0 (Success)
  */
@@ -20,12 +22,6 @@ int main(int argc, char **argv)
 
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-
-	if (f != '+' || f != '-' || f != '*' || f != '/' || f != '%')
-	{
-		printf("Error\n");
-		exit(99);
-	}
 
 	f = get_op_func(argv[2]);
 	result = f(a, b);
