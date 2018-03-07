@@ -8,20 +8,17 @@
 
 int pop_listint(listint_t **head)
 {
-	listint_t *new, *tmp;
+	int tmp_n;
+	listint_t *new;
 
-	new = malloc(sizeof(listint_t));
-	tmp = *head;
 
 	if (*head != NULL)
 	{
-		while (*head != NULL)
-		{
-			tmp = *head;
-			new = tmp;
-			tmp = tmp->next;
-			return (new->n);
-		}
+		new = *head;
+		tmp_n = new->n;
+		*head = new->next;
+		free(new);
+		return (tmp_n);
 	}
 
 	return (0);
