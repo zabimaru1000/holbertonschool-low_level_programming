@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * create_file - Appends text to file with NULL terminated string in 2nd arg
+ * append_text_to_file - Appends text to file with NULL terminated string in 2nd arg
  * @filename: Char pointer to the files name.
  * @text_content: NULL terminated string.
  * Return: 1 (Success), -1 (Failure)
