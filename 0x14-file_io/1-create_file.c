@@ -8,25 +8,27 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd;
+	int fd, text;
 	ssize_t bytes;
 
-	bytes = sizeof(text_content);
+	bytes = sizeof(text_content) - 3;
 
-	if (filename == NULL)
-		return (-1);
-
-	if (text_content == NULL)
+	if (filename != NULL)
 	{
-		fd = open(filename, O_CREAT | O_WRONLY, 0600);
-		return (-1);
+
+		if (text_content == NULL)
+			text_content = "";
+
+		fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+
+		text = write(fd, text_content, bytes);
+
+		if (text < 0)
+			return(-1);
+
+		close(fd);
+		return (1);
 	}
 
-	fd = open(filename, O_CREAT | O_WRONLY, 0600);
-	read(fd, text_content, bytes);
-	write(fd, text_content, bytes);
-
-	close(fd);
-
-	return (1);
+	return (-1);
 }
