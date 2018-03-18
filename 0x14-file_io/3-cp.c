@@ -10,7 +10,7 @@
 int main(int ac, char **av)
 {
 	int fd, fd2, get_read, get_write;
-	char *buffer[1024];
+	char buffer[1024];
 
 	if (ac != 3)
 	{
