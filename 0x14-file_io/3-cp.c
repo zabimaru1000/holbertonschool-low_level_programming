@@ -10,7 +10,7 @@
 int main(int ac, char **av)
 {
 	int fd, fd2, get_read, get_write;
-	char *buffer[1024];
+	char buffer[1024];
 
 	if (ac != 3)
 	{
@@ -50,19 +50,17 @@ int main(int ac, char **av)
 		}
 	}
 
-	if (close(fd) == -1)
+	if ((close(fd)) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
-	close(fd);
 
-	if (close(fd2) == -1)
+	if ((close(fd2)) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd2);
 		exit(100);
 	}
-	close(fd2);
 
 	return (0);
 }
