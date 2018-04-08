@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 #include "3-calc.h"
 
@@ -9,11 +10,24 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-	get_op_func("+")(*op_add);
-	get_op_func("-")(*op_sub);
-	get_op_func("*")(*op_mul);
-	get_op_func("/")(*op_div);
-	get_op_func("%")(*op_mod);
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
+	int i;
 
-	return (s);
+	i = 0;
+	while (ops[i].f != NULL)
+	{
+		if (s[1] == '\0' && *s == *ops[i].op)
+			return (ops[i].f);
+		i++;
+	}
+
+	printf("Error\n");
+	exit(99);
 }
