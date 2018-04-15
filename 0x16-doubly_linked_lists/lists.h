@@ -5,6 +5,10 @@
 #include <string.h>
 #include <stdio.h>
 
+#define DEL_SUCCESS 1
+#define DEL_FAILURE -1
+#define EXIT_SUCCESS 0
+
 /**
  * struct dlistint_s - doubly linked list
  * @n: integer
