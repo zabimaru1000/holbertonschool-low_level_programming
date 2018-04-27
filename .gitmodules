@@ -1,6 +1,0 @@
-[submodule "monty"]
-	path = monty
-	url = https://github.com/zabimaru1000/holbertonschool-low_level_programming
-[submodule "test"]
-	path = test
-	url = https://github.com/zabimaru1000/holbertonschool-low_level_programming
