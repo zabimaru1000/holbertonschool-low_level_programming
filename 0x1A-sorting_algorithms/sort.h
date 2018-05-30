@@ -24,5 +24,7 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void print_list(const listint_t *list);
 void print_array(const int *array, size_t size);
+void recursion_sort(int *array, size_t size, int start, int end);
+int lomuto(int *array, size_t size, int start, int end);
 
 #endif
