@@ -7,13 +7,14 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *print_ht;
-	unsigned long int size = ht->size;
+	unsigned long int size;
 	unsigned int i = 0;
-	int comma_ctr;
+	int comma_ctr = 0;
 
 	if (ht == NULL)
 		return;
 
+	size = ht->size;
 	printf("{");
 
 	while (i < size)
