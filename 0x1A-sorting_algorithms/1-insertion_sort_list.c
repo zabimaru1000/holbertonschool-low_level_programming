@@ -12,7 +12,8 @@ void insertion_sort_list(listint_t **list)
 	node = *list;
 	node = node->next;
 
-	if (*list == NULL || list == NULL)
+	/* Make sure to check if list is NULL first before checking *list */
+	if (list == NULL || *list == NULL)
 		return;
 
 	/* Scan through list until it reaches NULL */
